@@ -1,0 +1,31 @@
+<h1 class="title">Edit task</h1>
+<div mat-dialog-content>
+  <form #form="ngForm" (ngSubmit)="onFormSubmit(form)">
+    <div class="field">
+      <input type="text" class="input" 
+        placeholder="edit todo"
+        [ngModel]="todo.text" 
+        name="text" 
+        minlength="3" 
+        required type="text" 
+        type="text"
+         #todoTextField="ngModel">
+    </div>
+    <div *ngIf="todoTextField.invalid">
+      <p class="help is-danger" *ngIf="todoTextField.errors?.['required']">The field must not be empty</p>
+      <p class="help is-danger" *ngIf="todoTextField.errors?.['minlength']">The task should be longer</p>
+    </div>
+    <br>
+    <div class="field is-grouped is-grouped-right">
+      <div class="control">
+        <button type="button" class="button is-light" (click)="close()">Cancel</button>
+      </div>
+      <div class="control">
+        <button type="submit" class="button is-my-color" (click)="save()">Save</button>
+      </div>
+    </div>
+
+
+
+  </form>
+</div>

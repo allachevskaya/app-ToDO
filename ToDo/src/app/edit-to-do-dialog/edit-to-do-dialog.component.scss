@@ -1,0 +1,15 @@
+.is-my-color{
+  background-color: rgb(133, 68, 170);
+  color: #fafafa;
+  border:1px solid  rgb(133, 68, 170);
+  &:active{
+    border:2px solid   rgb(206, 206, 206);
+  }
+}
+
+.title{
+  text-align: center;
+  color:  rgb(2, 228, 171);
+  font-weight: 600;
+  
+}

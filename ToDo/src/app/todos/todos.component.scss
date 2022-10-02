@@ -1,0 +1,61 @@
+.heading-section {
+  background: linear-gradient(to right, rgb(2, 228, 171), rgb(183, 118, 202));
+  padding: 100px;
+  padding-bottom: 110px;
+
+  h1.title {
+    font-weight: bold;
+    color: #fafafa;
+    text-shadow: 0px 1px 2px rgba(gray, 0.18);
+  }
+}
+
+.container {
+  max-width: 800px;
+}
+.add-todo-sticy{
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.add-todo-box {
+  // border:2px solid rgb(183, 118, 202);
+  border-radius: 4px;
+  padding: 30px;
+  margin-top: -50px;
+  background-color: #fafafa;
+  box-shadow: 0px 4px 2px rgba(gray, 0.18);
+  
+  
+}
+
+.button {
+  background: linear-gradient(to right, rgb(133, 68, 170), rgb(183, 118, 202));
+  color: #fafafa;
+
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  opacity: 0.78;
+  cursor: pointer;
+
+  &:active {
+    box-shadow: 0px 3px 2px rgba(gray, 0.18);
+  }
+
+  &:focus {
+    color: #fafafa;
+  }
+
+  &:hover {
+    opacity: 1;
+    color: #fafafa;
+    transition: 0.5s;
+
+
+
+  }
+
+}
+
